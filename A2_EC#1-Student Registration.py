@@ -11,5 +11,5 @@ print()
 print("Welcome ", name, last_name,"!")
 print("Your registration is complete.")
 print("Your temporary password is: ", name + "*" + year_born)
-print("Test a change")
+
 
