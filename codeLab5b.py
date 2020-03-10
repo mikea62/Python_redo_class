@@ -64,16 +64,18 @@ def deal_card(deck):
     return card
 
 
-def deal_dealer():
+def deal_dealer(deck):
+    card = deck.pop(0)
     player_cards = deal_card(card_deck())
     print(player_cards)
-    return
 
 
-def deal_player():
+
+def deal_player(deck):
+    card = deck.pop(0)
     dealer_cards = deal_card(card_deck())
     print(dealer_cards)
-    return
+
 
 
 def player_show():
@@ -93,9 +95,10 @@ def main():
 
     print("BLACKJACK!")
     print("Blackjack payout is 3:2")
-    #    print(card_deck())
+    deal_dealer()
 
-    
+
+
 
 
 if __name__ == "__main__":
