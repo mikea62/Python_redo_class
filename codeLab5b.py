@@ -23,6 +23,8 @@ def card_deck():
     return deck
 
 
+
+
 def bet():
     while True:
         player_money = int(input("Starting player money: "))
@@ -58,6 +60,12 @@ def bet():
         break
 
 
+def deal_card(deck):
+    card = deck.pop(0)
+ #   print(card)
+    return card
+
+
 def dealer_show():
     return
 
@@ -65,15 +73,9 @@ def dealer_show():
 def player_show():
     return
 
+
 def hit_or_stand():
     return
-
-
-def deal_card(deck):
-    card = deck.pop(0)
-    return
-
-
 
 
 def main():
@@ -84,7 +86,15 @@ def main():
 
     print("BLACKJACK!")
     print("Blackjack payout is 3:2")
-    print()
+#    print(card_deck())
+
+    dealer_cards = deal_card(card_deck())
+    print(dealer_cards)
+    player_cards = deal_card(card_deck())
+    print(player_cards)
+    dealer_cards = deal_card(card_deck()).append
+    print(dealer_cards)
+
 
 
 if __name__ == "__main__":
