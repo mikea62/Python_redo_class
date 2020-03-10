@@ -23,7 +23,7 @@ def card_deck():
     return deck
 
 
-def user_input():
+def bet():
     while True:
         player_money = int(input("Starting player money: "))
         if player_money < 0 or player_money > 10000:
@@ -58,22 +58,22 @@ def user_input():
         break
 
 
-def deal_card_player(deck):
-    card = deck.pop(0)  # deal card
+def dealer_show():
     return
 
+
+def player_show():
+    return
 
 def hit_or_stand():
     return
 
 
-def deal_card_dealer(deck):
+def deal_card(deck):
     card = deck.pop(0)
     return
 
 
-def blackjack_rules():
-    return
 
 
 def main():
